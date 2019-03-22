@@ -12,6 +12,7 @@
 		7BC142882245660B00E77D33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BC142862245660B00E77D33 /* Main.storyboard */; };
 		7BC1428A2245660F00E77D33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BC142892245660F00E77D33 /* Assets.xcassets */; };
 		7BC1428D2245660F00E77D33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BC1428B2245660F00E77D33 /* LaunchScreen.storyboard */; };
+		7BC14297224567ED00E77D33 /* NetWorkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC14296224567ED00E77D33 /* NetWorkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		7BC142892245660F00E77D33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BC1428C2245660F00E77D33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BC1428E2245660F00E77D33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BC14296224567ED00E77D33 /* NetWorkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				7BC142822245660B00E77D33 /* AppDelegate.swift */,
 				7BC142842245660B00E77D33 /* ViewController.swift */,
+				7BC14296224567ED00E77D33 /* NetWorkManager.swift */,
 				7BC142862245660B00E77D33 /* Main.storyboard */,
 				7BC142892245660F00E77D33 /* Assets.xcassets */,
 				7BC1428B2245660F00E77D33 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			files = (
 				7BC142852245660B00E77D33 /* ViewController.swift in Sources */,
 				7BC142832245660B00E77D33 /* AppDelegate.swift in Sources */,
+				7BC14297224567ED00E77D33 /* NetWorkManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
