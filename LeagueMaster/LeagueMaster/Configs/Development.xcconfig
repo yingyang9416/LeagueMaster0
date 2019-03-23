@@ -1,0 +1,12 @@
+//
+//  Development.xcconfig
+//  LeagueMaster
+//
+//  Created by Ying Yang on 3/23/19.
+//  Copyright © 2019 Steven Yang. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+server_base_url = https:/$()/na1.api.riotgames.com
