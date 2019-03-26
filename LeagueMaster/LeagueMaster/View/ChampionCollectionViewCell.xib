@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ChampionCollectionViewCell" customModule="LeagueMaster" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="244" height="395"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="244" height="395"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Champion name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YcM-hB-dLN">
+                        <rect key="frame" x="0.0" y="374" width="244" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Aatrox" translatesAutoresizingMaskIntoConstraints="NO" id="hMh-P0-XYP">
+                        <rect key="frame" x="0.0" y="0.0" width="244" height="374"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="hMh-P0-XYP" secondAttribute="trailing" id="Mpi-J3-dnx"/>
+                <constraint firstItem="YcM-hB-dLN" firstAttribute="top" secondItem="hMh-P0-XYP" secondAttribute="bottom" id="Xzx-ae-1gt"/>
+                <constraint firstAttribute="trailing" secondItem="YcM-hB-dLN" secondAttribute="trailing" id="ZOc-Nu-Gh3"/>
+                <constraint firstItem="hMh-P0-XYP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="bXr-Cy-cMr"/>
+                <constraint firstItem="hMh-P0-XYP" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="cAH-XX-c4h"/>
+                <constraint firstAttribute="bottom" secondItem="YcM-hB-dLN" secondAttribute="bottom" id="xqF-oh-sJS"/>
+                <constraint firstItem="YcM-hB-dLN" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="yfw-4a-RAD"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="244" height="395"/>
+            <connections>
+                <outlet property="image" destination="hMh-P0-XYP" id="GCX-ZI-9zP"/>
+                <outlet property="nameLabel" destination="YcM-hB-dLN" id="StJ-fB-0p0"/>
+            </connections>
+            <point key="canvasLocation" x="188.80000000000001" y="324.28785607196403"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Aatrox" width="308" height="560"/>
+    </resources>
+</document>

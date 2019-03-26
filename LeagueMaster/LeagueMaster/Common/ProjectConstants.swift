@@ -8,4 +8,7 @@
 
 import Foundation
 
-let SERVER_BASE_URL = Environment.configuration(PlistKey.ServerURL)
+let SERVER_BASE_URL = Environment.configuration(.ServerBaseURL)
+let STATIC_DATA_BASE_URL = Environment.configuration(.StaticDataBaseURL)
+let GAME_PATCH = Environment.configuration(.GamePatch)
+let API_KEY = Environment.configuration(.ApiKey)
