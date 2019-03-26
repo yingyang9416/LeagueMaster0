@@ -19,7 +19,9 @@ class MasterViewController: UIViewController {
         splitViewController?.preferredDisplayMode = .allVisible
         setUpViews()
         viewModel.getAllChampions(onSuccess: {
-            self.championCollectionView.reloadData()
+            DispatchQueue.main.async {
+                self.championCollectionView.reloadData()
+            }
         }) { (error) in
             print("error")
         }

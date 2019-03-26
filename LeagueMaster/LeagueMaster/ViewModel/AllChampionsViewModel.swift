@@ -11,13 +11,13 @@ import Foundation
 class AllChampionsViewModel {
     private(set) var allChampions: [Champion] = []
     
-    func getAllChampions(onSuccess:() -> (), onFail: @escaping (NetWorkError?)->()) {
+    func getAllChampions(onSuccess: @escaping () -> (), onFail: @escaping (NetWorkError?)->()) {
         ApiCaller.shared.getAllChampions(onSuccess: { (responseModel) in
-            for (id, champion) in responseModel.data {
-//                self.allChampions.append(champion)
-                print(id)
+            for (_, champion) in responseModel.data {
+                self.allChampions.append(champion)
             }
-            print("is: \(responseModel.format)")
+            self.allChampions = self.allChampions.sorted{ $0.name < $1.name }
+            onSuccess()
         }, onFail: onFail)
     }
 }
