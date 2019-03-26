@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7BC142832245660B00E77D33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC142822245660B00E77D33 /* AppDelegate.swift */; };
-		7BC142852245660B00E77D33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC142842245660B00E77D33 /* ViewController.swift */; };
 		7BC142882245660B00E77D33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BC142862245660B00E77D33 /* Main.storyboard */; };
 		7BC1428A2245660F00E77D33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BC142892245660F00E77D33 /* Assets.xcassets */; };
 		7BC1428D2245660F00E77D33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BC1428B2245660F00E77D33 /* LaunchScreen.storyboard */; };
@@ -17,6 +16,14 @@
 		DC2CE91422467828003BC934 /* ProjectConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2CE91322467828003BC934 /* ProjectConstants.swift */; };
 		DC2CE92122468543003BC934 /* LeagueMasterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2CE92022468543003BC934 /* LeagueMasterTests.swift */; };
 		DC2CE93122468555003BC934 /* LeagueMasterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2CE93022468555003BC934 /* LeagueMasterUITests.swift */; };
+		DC2CE93F22469865003BC934 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2CE93E22469865003BC934 /* MasterViewController.swift */; };
+		DC2CE941224698A5003BC934 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2CE940224698A5003BC934 /* DetailViewController.swift */; };
+		DC2CE9442246A194003BC934 /* ChampionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2CE9422246A194003BC934 /* ChampionCollectionViewCell.swift */; };
+		DC2CE9452246A194003BC934 /* ChampionCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC2CE9432246A194003BC934 /* ChampionCollectionViewCell.xib */; };
+		DC2CE9482249ABBC003BC934 /* AllChampionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2CE9472249ABBC003BC934 /* AllChampionsViewModel.swift */; };
+		DC2CE94B2249AF98003BC934 /* Champion.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2CE94A2249AF98003BC934 /* Champion.swift */; };
+		DC2CE94D2249B33D003BC934 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2CE94C2249B33D003BC934 /* Errors.swift */; };
+		DC2CE94F2249B947003BC934 /* ApiCaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2CE94E2249B947003BC934 /* ApiCaller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +46,6 @@
 /* Begin PBXFileReference section */
 		7BC1427F2245660B00E77D33 /* LeagueMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeagueMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BC142822245660B00E77D33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7BC142842245660B00E77D33 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7BC142872245660B00E77D33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7BC142892245660F00E77D33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BC1428C2245660F00E77D33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,6 +61,14 @@
 		DC2CE92E22468555003BC934 /* LeagueMasterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeagueMasterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC2CE93022468555003BC934 /* LeagueMasterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueMasterUITests.swift; sourceTree = "<group>"; };
 		DC2CE93222468555003BC934 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC2CE93E22469865003BC934 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		DC2CE940224698A5003BC934 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		DC2CE9422246A194003BC934 /* ChampionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionCollectionViewCell.swift; sourceTree = "<group>"; };
+		DC2CE9432246A194003BC934 /* ChampionCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChampionCollectionViewCell.xib; sourceTree = "<group>"; };
+		DC2CE9472249ABBC003BC934 /* AllChampionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllChampionsViewModel.swift; sourceTree = "<group>"; };
+		DC2CE94A2249AF98003BC934 /* Champion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Champion.swift; sourceTree = "<group>"; };
+		DC2CE94C2249B33D003BC934 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		DC2CE94E2249B947003BC934 /* ApiCaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCaller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,11 +119,12 @@
 		7BC142812245660B00E77D33 /* LeagueMaster */ = {
 			isa = PBXGroup;
 			children = (
+				DC2CE9492249AF7D003BC934 /* Model */,
+				DC2CE9462249AB87003BC934 /* ViewModel */,
+				DC2CE93D22469744003BC934 /* View */,
 				DC2CE90D224673A4003BC934 /* Configs */,
 				DC2CE91222467802003BC934 /* Common */,
 				7BC142822245660B00E77D33 /* AppDelegate.swift */,
-				7BC142842245660B00E77D33 /* ViewController.swift */,
-				7BC14296224567ED00E77D33 /* NetWorkManager.swift */,
 				7BC142862245660B00E77D33 /* Main.storyboard */,
 				7BC142892245660F00E77D33 /* Assets.xcassets */,
 				7BC1428B2245660F00E77D33 /* LaunchScreen.storyboard */,
@@ -131,7 +146,10 @@
 		DC2CE91222467802003BC934 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				7BC14296224567ED00E77D33 /* NetWorkManager.swift */,
+				DC2CE94E2249B947003BC934 /* ApiCaller.swift */,
 				DC2CE91322467828003BC934 /* ProjectConstants.swift */,
+				DC2CE94C2249B33D003BC934 /* Errors.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -152,6 +170,33 @@
 				DC2CE93222468555003BC934 /* Info.plist */,
 			);
 			path = LeagueMasterUITests;
+			sourceTree = "<group>";
+		};
+		DC2CE93D22469744003BC934 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DC2CE93E22469865003BC934 /* MasterViewController.swift */,
+				DC2CE940224698A5003BC934 /* DetailViewController.swift */,
+				DC2CE9422246A194003BC934 /* ChampionCollectionViewCell.swift */,
+				DC2CE9432246A194003BC934 /* ChampionCollectionViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DC2CE9462249AB87003BC934 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DC2CE9472249ABBC003BC934 /* AllChampionsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DC2CE9492249AF7D003BC934 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DC2CE94A2249AF98003BC934 /* Champion.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BC1428D2245660F00E77D33 /* LaunchScreen.storyboard in Resources */,
+				DC2CE9452246A194003BC934 /* ChampionCollectionViewCell.xib in Resources */,
 				7BC1428A2245660F00E77D33 /* Assets.xcassets in Resources */,
 				7BC142882245660B00E77D33 /* Main.storyboard in Resources */,
 			);
@@ -285,11 +331,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BC142852245660B00E77D33 /* ViewController.swift in Sources */,
+				DC2CE93F22469865003BC934 /* MasterViewController.swift in Sources */,
 				DC2CE9112246760C003BC934 /* Environment.swift in Sources */,
 				7BC142832245660B00E77D33 /* AppDelegate.swift in Sources */,
+				DC2CE94F2249B947003BC934 /* ApiCaller.swift in Sources */,
+				DC2CE9442246A194003BC934 /* ChampionCollectionViewCell.swift in Sources */,
+				DC2CE941224698A5003BC934 /* DetailViewController.swift in Sources */,
+				DC2CE9482249ABBC003BC934 /* AllChampionsViewModel.swift in Sources */,
+				DC2CE94D2249B33D003BC934 /* Errors.swift in Sources */,
 				DC2CE91422467828003BC934 /* ProjectConstants.swift in Sources */,
 				7BC14297224567ED00E77D33 /* NetWorkManager.swift in Sources */,
+				DC2CE94B2249AF98003BC934 /* Champion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
